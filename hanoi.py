@@ -61,4 +61,8 @@ def initialize(n):
     print_state()
 
 
-solve(10)
+while True:
+    user_input = (input("enter a number of discs (q) to quit: "))
+    if user_input in ["q", "Q"]:
+        break
+    solve(int(user_input))
